@@ -88,7 +88,7 @@ iconList = [
 Всё это мы можем записать в одну "команду":
 
 ```
-<img *ngFor="let icon of iconList.slice(0, 10)" src={{ icon.src }} alt={{ icon.alt }}/>
+<img *ngFor="let icon of iconList.slice(0, 10)" src="{{ icon.src }}" alt="{{ icon.alt }}"/>
 ```
 
 Значение `src` "биндится" к значению `icon.src`, а значение `alt` к значению `icon.alt`. Мы берем "слайс" первых 10 элементов массива, чтобы у нас не "съезжала" вёрстка при слишком большом количестве иконок.
